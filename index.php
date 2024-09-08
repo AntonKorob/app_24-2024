@@ -2,27 +2,30 @@
     require_once 'classes/Membership.php';
     $membership = new Membership();
     $membership->confirm_Member();
-?>
+    ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php require 'layouts/header.php' ?>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Web-site</title>
-    </head>
+<div class="container">
+    <h3>First page</h3>
 
-    <body>
-        <div class="container">
-            <h3>First page</h3>
-            <button>
-                <a href="login.php?status=loggedout">Log Out</a>
-            </button>
-        </div>
+    <table class="head_table">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <?php  for($i = 0; $i <= 6; $i++){ ?>
 
-    </body>
+        <tr>
+            <td>When a given file </td>
+            <td>When a given file contains xtension</td>
+            <td>extension</td>
+        </tr>
 
-</html>
+        <?php } ;?>
+    </table>
+
+</div>
+
+<?php require 'layouts/footer.php' ?>

@@ -1,0 +1,43 @@
+.container{
+    padding: 20px;
+    margin: 20px;
+    width: auto;
+    background-color: rgb(198, 229, 231);
+}
+th, td{
+    padding: 6px;
+    margin: 6px;
+    border: 2px solid rgb(114, 108, 114);;
+}
+button{
+    padding: 6px;
+    margin: 6px;
+}
+a{
+    padding: 5px;
+    margin: 5px;
+    text-decoration-line: none;
+}
+.header{
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.icon_header{
+    padding: 5px;
+    margin: 5px;
+    height: 60px;
+}
+.link_line{
+    margin-left: auto;
+    margin-right: 0;
+}
+.footer_date{
+    padding: 5px;
+    margin: 5px;
+    float: right;
+    
+}
+
