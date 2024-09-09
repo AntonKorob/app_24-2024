@@ -15,6 +15,7 @@
             <th>Contact</th>
             <th>Country</th>
         </tr>
+
         <?php  for($i = 0; $i <= 6; $i++){ ?>
 
         <tr>
