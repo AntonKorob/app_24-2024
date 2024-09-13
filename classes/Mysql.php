@@ -1,6 +1,6 @@
 <?php
 
-require_once 'lncludes/constance.php';
+require 'lncludes/constance.php';
 
 class Mysql
 {
@@ -8,6 +8,7 @@ class Mysql
     
     function __construct(){
         $this->conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME) or die("Не могу соединиться с базой данных");
+        
     }
     
     function verify_Username_and_Pass($un, $pwd){
@@ -23,6 +24,7 @@ class Mysql
                 return true;
             }
         }
-        
     }
+        
+    
 }

@@ -13,9 +13,9 @@
         <div class="header">
             <img class="icon_header" src="img/img_icon_header.png" alt="www">
             <div class="link_line">
-                <a href=".">Home</a>
                 <a href=".">Place</a>
-                <a href=".">About us</a>
+                <a href="home.php">Home</a>
+                <a href="about_us.php">About us</a>
                 <a href=".">Contacts</a>
             </div>
             <div class="login_logout">

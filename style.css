@@ -17,12 +17,20 @@ a{
     padding: 5px;
     margin: 5px;
     text-decoration-line: none;
+    text-justify: auto;
+    font-size: 19px;
+    font-weight: bold;
 }
 .header{
+    width: 100%;
+    background-color: #2d3083;
+    color: #d6d6f7;
     padding: 8px;
     margin: 8px;
     display: flex;
     align-items: center;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 .icon_header{
@@ -33,6 +41,16 @@ a{
 .link_line{
     margin-left: auto;
     margin-right: 0;
+}
+.footer{
+    background-color: #5e63ec;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;   
+    font-size: 19px;
+    font-weight: bold;
+    color: #fafaff;  
 }
 .footer_date{
     padding: 5px;

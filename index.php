@@ -6,12 +6,14 @@
 
 <?php require 'layouts/header.php' ?>
 
+<!-- Main pge -->
 <div class="container">
+
     <h3>First page</h3>
 
     <table class="head_table">
         <tr>
-            <th>Company</th>
+            <th><?php ?></th>
             <th>Contact</th>
             <th>Country</th>
         </tr>
