@@ -12,7 +12,7 @@ session_start();
     <?php  
     
     require './lncludes/constance.php';  
-
+    
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     $sql = "SELECT id, title, text, description FROM about_us";
@@ -21,37 +21,32 @@ session_start();
     if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-    $sql = "SELECT id, title, text, description FROM about_us";
     
-    for($i = 0; $i <= $row['id']; $i++){
-        ?>
-    <div class="main">
-        <div class="title">
-            <?$row["title"]?>
-        </div>
-        <div class="text">
+    ?>
+    <div class="row d-flex">
+        <div class=" col-6 border border-info-subtle rounded m-2 ">
+            <div class="text-center p-3">
+                <?php echo $row["title"]?>
+            </div>
+            <div class="p-3">
+                <?php echo $row["text"]?>
+            </div>
+            <div class="border-secondary border-top p-3 mt-2 ">
+                <?php echo $row["description"]?>
+            </div>
 
-            <?$row["text"]?>
-        </div>
-        <div class="description">
-            <?$row["description"]?>
         </div>
     </div>
-
-    <?php  
-
-    }
-
-    // echo "id: " . $row["id"]. " - Name: " . $row["title"]. " " . $row["text"]. " " . $row["description"]. "<br>";
+    <?php
+    
     }
     } else {
     echo "0 results";
     }
+
     $conn->close();
 
-
     ?>
-
 
 </div>
 

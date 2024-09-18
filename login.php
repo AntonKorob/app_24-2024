@@ -16,21 +16,23 @@ if($_POST && !empty($_POST['username']) && !empty($_POST['pwd'])){
 
 
 <?php require 'layouts/header.php'; ?>
+<div class="container">
 
-<div class="login">
-    <h3>Введите свои данные</h3>
-    <form action="" method="post">
-        <p>
-            <label for="name">User name :</label>
-            <input type="text" name="username">
-        </p>
-        <p><label for="password">Password :</label>
-            <input type="password" name="pwd">
-        </p>
-        <p><input type="submit" value="Login"></p>
-    </form>
+    <div class="login">
+        <h3>Введите свои данные</h3>
+        <form class="p-2 m-2" action="" method="post">
+            <p>
+                <label for="name">User name :</label>
+                <input class="p-3 m-2" type="text" name="username">
+            </p>
+            <p><label for="password">Password :</label>
+                <input class="p-3 m-2" type="password" name="pwd">
+            </p>
+            <button class="btn btn-success" type="submit">Login</button>
+        </form>
 
-    <?php if(isset($response)) echo "<h4>". $response . "</h4>"  ?>
+        <?php if(isset($response)) echo "<h4>". $response . "</h4>"  ?>
+    </div>
 </div>
 
 <?php require 'layouts/footer.php'; ?>

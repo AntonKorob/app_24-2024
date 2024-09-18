@@ -9,14 +9,14 @@ session_start();
     <h3>List data</h3>
     <form action="crud/create.php" method="post">
 
-        <input type="text" name="company" required>
-        <input type="text" name="contact" required>
-        <input type="text" name="country" required>
+        <input class="p-3 m-2" type="text" name="company" required>
+        <input class="p-3 m-2" type="text" name="contact" required>
+        <input class="p-3 m-2" type="text" name="country" required>
 
-        <button type="submit">Create</button>
+        <button class="btn btn-success mt-1" type="submit">Create</button>
     </form>
-    <button><a href="crud/delete.php">Delete last</a></button>
-    <button><a href="crud/delete_all.php">Delete ALL</a></button>
+    <button class="btn btn-secondary "><a href="crud/delete.php">Delete last</a></button>
+    <button class="btn btn-secondary "><a href="crud/delete_all.php">Delete ALL</a></button>
     <hr>
 
     <?php  

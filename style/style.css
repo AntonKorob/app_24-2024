@@ -4,14 +4,19 @@
     width: auto;
     background-color: rgb(198, 229, 231);
 }
-th, td{
-    padding: 6px;
-    margin: 6px;
-    border: 2px solid rgb(114, 108, 114);;
-}
+
 button{
     padding: 6px;
     margin: 6px;
+    font-size: 19px;
+}
+input{
+    height: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-justify: auto;
+    font-size: 19px;
+    font-weight: bold;
 }
 a{
     padding: 5px;
@@ -28,9 +33,7 @@ a{
     padding: 8px;
     margin: 8px;
     display: flex;
-    align-items: center;
     font-size: 19px;
-    font-weight: bold;
 }
 
 .icon_header{
@@ -55,7 +58,6 @@ a{
 .footer_date{
     padding: 5px;
     margin: 5px;
-    float: right;
-    
+    float: right;  
 }
 
